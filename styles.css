@@ -68,6 +68,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -108,7 +109,6 @@ nav ul li a:hover {
 
 .about-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 40px;
 }
@@ -118,10 +118,15 @@ nav ul li a:hover {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);
 }
 
 .about-text {
-  text-align: center;
+  flex: 1;
 }
 
 .about-highlights {
@@ -136,6 +141,12 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 5px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .highlight i {
@@ -162,6 +173,12 @@ nav ul li a:hover {
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .skill i {
@@ -186,6 +203,12 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Experience Section */
@@ -235,6 +258,12 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-photo {
@@ -299,6 +328,11 @@ form button:hover {
 .social-links a {
   margin: 0 10px;
   font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #2980b9;
 }
 
 /* Footer */
