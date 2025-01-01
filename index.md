@@ -4,11 +4,14 @@ layout: default
 
 <!-- Hero Section -->
 <section class="hero" id="home">
+  <div class="stars-bg"></div> <!-- Starfield background overlay -->
   <div class="container hero-content fade-up">
     <div class="hero-text">
-      <h1>Hi, I'm <span>Sros</span></h1>
-      <p>Building Scalable Backend Solutions for Modern Digital Banking &amp; FinTech</p>
-      <a href="#projects" class="btn-primary">View My Work</a>
+      <h1>Hi, I'm <span>Yort Sros</span></h1>
+      <p>
+        Building Scalable Backend Solutions for Modern Digital Banking &amp; FinTech
+      </p>
+      <a href="#projects" class="btn-primary neon-btn">View My Work</a>
     </div>
     <div class="hero-img">
       <!-- Replace with your own image if desired -->
@@ -19,13 +22,14 @@ layout: default
       />
     </div>
   </div>
-  <!-- Wave SVG -->
+  <!-- Wave SVG for futuristic flair -->
   <div class="wave-container">
     <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <!-- Neon aqua wave -->
       <path
-        fill="#ffffff"
-        fill-opacity="1"
-        d="M0,128L48,122.7C96,117,192,107,288,122.7C384,139,480,181,576,202.7C672,224,768,224,864,213.3C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        fill="#64ffda"
+        fill-opacity="0.4"
+        d="M0,96L30,85.3C60,75,120,53,180,80C240,107,300,181,360,186.7C420,192,480,128,540,122.7C600,117,660,171,720,186.7C780,203,840,181,900,149.3C960,117,1020,75,1080,53.3C1140,32,1200,32,1260,53.3C1320,75,1380,117,1410,138.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
       ></path>
     </svg>
   </div>
@@ -113,7 +117,7 @@ layout: default
     </div>
     <div class="projects-grid">
       <!-- Project 1 -->
-      <div class="project-card">
+      <div class="project-card neon-card">
         <img
           src="https://via.placeholder.com/600x400"
           alt="Digital Banking and FinTech"
@@ -130,7 +134,7 @@ layout: default
         </div>
       </div>
       <!-- Project 2 -->
-      <div class="project-card">
+      <div class="project-card neon-card">
         <img
           src="https://via.placeholder.com/600x400"
           alt="Payment Gateway Integration"
@@ -216,7 +220,7 @@ layout: default
     </div>
     <div class="testimonial-list">
       <!-- Testimonial 1 -->
-      <div class="testimonial-item">
+      <div class="testimonial-item neon-card">
         <h3>Sean Mengkong</h3>
         <p><em>Deputy Head of Digital Banking</em></p>
         <blockquote>
@@ -230,7 +234,7 @@ layout: default
         </blockquote>
       </div>
       <!-- Testimonial 2 -->
-      <div class="testimonial-item">
+      <div class="testimonial-item neon-card">
         <h3>Chanheng SEANG</h3>
         <p><em>Lead Architect</em></p>
         <blockquote>
@@ -286,7 +290,7 @@ layout: default
         placeholder="Your Message"
         required
       ></textarea>
-      <button type="submit" class="btn-primary">Send Message</button>
+      <button type="submit" class="btn-primary neon-btn">Send Message</button>
     </form>
   </div>
 </section>

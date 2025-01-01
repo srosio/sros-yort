@@ -17,7 +17,7 @@ const observerOptions = {
 
 const fadeUpObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
             entry.target.classList.add('show');
             observer.unobserve(entry.target);
         }
