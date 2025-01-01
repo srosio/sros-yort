@@ -210,3 +210,50 @@ body {
     text-align: center;
     padding: 20px 0;
   }
+  /* Testimonials Section */
+.testimonials {
+  background: #f4f4f4;
+  padding: 80px 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.testimonial .role {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial .date {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
