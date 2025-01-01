@@ -8,13 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    /* Orbitron for headings (futuristic), fallback to Poppins or sans-serif */
+    /* For headings, we'll use Press Start 2P or VT323 (in the hero glitch) */
     font-family: 'Poppins', sans-serif;
-    color: #eee;
-    background-color: #0a0f12; /* Dark background for a futuristic vibe */
+    background: #0b0013; /* Very dark with a slight purple hue */
+    color: #ddd;
     line-height: 1.6;
-    position: relative;
     overflow-x: hidden;
+    position: relative;
 }
 
 /* GLOBAL CONTAINERS */
@@ -27,8 +27,8 @@ body {
 
 /* NAVBAR / HEADER */
 .header {
-    background: rgba(10, 15, 18, 0.9); /* Slight transparency */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background: rgba(11, 0, 19, 0.85);
+    box-shadow: 0 2px 8px rgba(255, 0, 128, 0.2);
     position: sticky;
     top: 0;
     z-index: 999;
@@ -38,28 +38,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.8rem 0;
 }
 .logo {
-    font-size: 1.6rem;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 600;
-    color: #64ffda;
-    text-shadow: 0 0 8px rgba(100,255,218,0.7);
+    font-size: 1.4rem;
+    color: #ff0080;
+    font-family: 'Press Start 2P', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(255, 0, 128, 0.7);
 }
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.2rem;
+    gap: 1.5rem;
 }
 .nav-links a {
     text-decoration: none;
     color: #eee;
-    font-weight: 500;
-    position: relative;
     transition: color 0.3s ease;
-    font-family: 'Orbitron', sans-serif;
-    letter-spacing: 0.5px;
+    position: relative;
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
 }
 .nav-links a.active::after,
 .nav-links a:hover::after {
@@ -67,13 +65,13 @@ body {
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #64ffda;
+    background: #ff0080;
     bottom: -4px;
     left: 0;
 }
 .nav-links a:hover,
 .nav-links a.active {
-    color: #64ffda;
+    color: #ff0080;
 }
 
 /* MENU TOGGLE (mobile) */
@@ -93,7 +91,7 @@ body {
 /* HERO */
 .hero {
     position: relative;
-    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    background: linear-gradient(135deg, #160020 0%, #310037 100%);
     color: #fff;
     overflow: hidden;
     min-height: 80vh;
@@ -104,27 +102,18 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 .hero-text {
     flex: 1;
     min-width: 280px;
 }
-.hero-text h1 {
-    font-size: 3rem;
-    font-family: 'Orbitron', sans-serif;
-    margin-bottom: 1rem;
-}
-.hero-text h1 span {
-    color: #64ffda; /* Neon Aqua */
-    text-shadow: 0 0 8px rgba(100,255,218,0.8);
-}
 .hero-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 500px;
     line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 .hero-img {
     flex: 1;
@@ -134,24 +123,109 @@ body {
 }
 .profile-pic {
     max-width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2),
-    0 0 40px rgba(100, 255, 218, 0.1);
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.3);
 }
 
-/* Starfield background for hero */
-.stars-bg {
+/* GLITCH TITLE EFFECT */
+.glitch-title {
+    font-family: 'Press Start 2P', sans-serif;
+    position: relative;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #ff0080;
+    text-shadow: 0 0 10px rgba(255, 0, 128, 0.7);
+}
+.glitch-title::before,
+.glitch-title::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    color: #ff00bf;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+}
+.glitch-title::before {
+    text-shadow: -2px 0 purple;
+    animation: glitch-anim 2.5s infinite linear alternate-reverse;
+}
+.glitch-title::after {
+    text-shadow: -2px 0 pink;
+    animation: glitch-anim2 2.5s infinite linear alternate-reverse;
+}
+
+/* Glitch Animations */
+@keyframes glitch-anim {
+    0% {
+        clip: rect(72px, 9999px, 74px, 0);
+        transform: skew(0.43deg);
+    }
+    5% {
+        clip: rect(29px, 9999px, 42px, 0);
+        transform: skew(0.61deg);
+    }
+    10% {
+        clip: rect(41px, 9999px, 88px, 0);
+        transform: skew(0.32deg);
+    }
+    15% {
+        clip: rect(45px, 9999px, 58px, 0);
+        transform: skew(0.76deg);
+    }
+    20% {
+        clip: rect(63px, 9999px, 30px, 0);
+        transform: skew(0.95deg);
+    }
+    100% {
+        clip: rect(17px, 9999px, 71px, 0);
+        transform: skew(0.56deg);
+    }
+}
+@keyframes glitch-anim2 {
+    0% {
+        clip: rect(15px, 9999px, 40px, 0);
+        transform: skew(0.43deg);
+    }
+    5% {
+        clip: rect(86px, 9999px, 56px, 0);
+        transform: skew(0.61deg);
+    }
+    10% {
+        clip: rect(67px, 9999px, 100px, 0);
+        transform: skew(0.32deg);
+    }
+    15% {
+        clip: rect(12px, 9999px, 22px, 0);
+        transform: skew(0.76deg);
+    }
+    20% {
+        clip: rect(71px, 9999px, 84px, 0);
+        transform: skew(0.95deg);
+    }
+    100% {
+        clip: rect(29px, 9999px, 19px, 0);
+        transform: skew(0.56deg);
+    }
+}
+
+/* GLITCH OVERLAY (scan lines or noise) */
+.glitch-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:
-            radial-gradient(white, rgba(255,255,255,0) 70%) repeat center center,
-            rgba(0,0,0,0.2);
-    background-size: 2px 2px;
-    z-index: 0;
-    pointer-events: none; /* Not clickable */
+    background: repeating-linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.02),
+            rgba(255, 255, 255, 0.02) 1px,
+            transparent 1px,
+            transparent 3px
+    );
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    opacity: 0.05;
+    z-index: 1;
 }
 
 /* Wave */
@@ -160,7 +234,7 @@ body {
     bottom: 0;
     width: 100%;
     line-height: 0;
-    z-index: 1;
+    z-index: 2;
 }
 .wave-container svg {
     display: block;
@@ -170,47 +244,39 @@ body {
 
 /* BUTTONS */
 .btn-primary,
-.btn-secondary,
 .neon-btn {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
+    padding: 0.65rem 1.3rem;
+    border-radius: 4px;
     text-decoration: none;
     font-weight: 600;
-    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'VT323', monospace;
+    font-size: 1.1rem;
 }
 .btn-primary {
-    background-color: #64ffda;
-    color: #0a0f12;
+    background-color: #ff0080;
+    color: #fff;
 }
 .btn-primary:hover {
-    background-color: #52e4c0;
-    box-shadow: 0 0 8px rgba(100,255,218,0.5);
+    background-color: #d10066;
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.7);
 }
 .neon-btn {
-    background-color: #111;
-    border: 2px solid #64ffda;
-    color: #64ffda;
-    position: relative;
+    background-color: transparent;
+    border: 2px solid #ff0080;
+    color: #ff0080;
 }
 .neon-btn:hover {
-    background-color: #0a0f12;
-    box-shadow: 0 0 15px #64ffda;
-}
-.btn-secondary {
-    background-color: #e9ecef;
-    color: #333;
-}
-.btn-secondary:hover {
-    background-color: #ced4da;
+    box-shadow: 0 0 8px #ff0080;
 }
 
 /* SECTIONS */
 .section {
-    padding: 4rem 0;
     position: relative;
-    z-index: 2; /* Above starfield if it extends */
+    padding: 4rem 0;
+    z-index: 2;
 }
 .section .section-content {
     text-align: center;
@@ -219,24 +285,24 @@ body {
     margin-bottom: 2rem;
 }
 .section-title h2 {
-    font-size: 2rem;
-    font-family: 'Orbitron', sans-serif;
-    margin-bottom: 0.5rem;
-    color: #64ffda;
-    text-shadow: 0 0 6px rgba(100,255,218,0.6);
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 1.5rem;
+    color: #ff0080;
+    text-shadow: 0 0 6px rgba(255, 0, 128, 0.6);
 }
 .underline {
     width: 80px;
     height: 3px;
-    background-color: #64ffda;
+    background-color: #ff0080;
     margin: 0.5rem auto 0;
     border-radius: 2px;
 }
 
 /* ABOUT */
 .about {
-    background: rgba(16, 18, 23, 0.6);
+    background: rgba(24, 0, 38, 0.6);
     backdrop-filter: blur(4px);
+    color: #ddd;
 }
 .about-grid {
     display: flex;
@@ -250,12 +316,11 @@ body {
     flex: 1;
     min-width: 300px;
     text-align: left;
-    color: #eee;
 }
 .about-img img {
     width: 100%;
     border-radius: 6px;
-    box-shadow: 0 0 20px rgba(100,255,218,0.15);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
 }
 .about-text ul {
     margin-top: 1rem;
@@ -265,7 +330,7 @@ body {
 
 /* SKILLS */
 #skills {
-    background: #0a0f12;
+    background: #0b0013;
 }
 .skills-list {
     display: flex;
@@ -276,17 +341,18 @@ body {
 }
 .skills-list li {
     list-style: none;
-    background: rgba(100,255,218,0.1);
+    background: rgba(255, 0, 128, 0.1);
     padding: 0.75rem 1rem;
     border-radius: 4px;
-    font-weight: 500;
-    box-shadow: 0 0 10px rgba(100,255,218,0.05);
+    box-shadow: 0 0 8px rgba(255, 0, 128, 0.1);
+    font-family: 'VT323', monospace;
 }
 
 /* PROJECTS */
 .projects {
-    background: rgba(16, 18, 23, 0.6);
+    background: rgba(24, 0, 38, 0.6);
     backdrop-filter: blur(4px);
+    color: #ddd;
 }
 .projects-grid {
     display: grid;
@@ -296,13 +362,13 @@ body {
     align-items: stretch;
 }
 .project-card {
+    background-color: #1a001f;
     border-radius: 6px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: #11161a;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 .project-img {
     width: 100%;
@@ -313,25 +379,26 @@ body {
     padding: 1.5rem;
     text-align: left;
     flex: 1;
-    color: #eee;
 }
 .project-info h3 {
     margin-bottom: 0.75rem;
     font-size: 1.25rem;
-    color: #64ffda;
+    color: #ff0080;
+    font-family: 'Press Start 2P', sans-serif;
 }
 .project-info p {
     margin-bottom: 1rem;
     line-height: 1.5;
 }
 .neon-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(100,255,218,0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.4);
 }
 
 /* EXPERIENCE */
 #experience {
-    background: #0a0f12;
+    background: #0b0013;
+    color: #ddd;
 }
 .experience-list {
     margin-top: 2rem;
@@ -339,17 +406,17 @@ body {
 }
 .experience-item {
     margin-bottom: 2rem;
-    color: #eee;
 }
 .experience-item h3 {
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    color: #64ffda;
+    font-size: 1.1rem;
+    color: #ff0080;
+    font-family: 'Press Start 2P', sans-serif;
 }
 .experience-item p {
     margin-bottom: 1rem;
     font-size: 0.95rem;
-    color: #aaa;
+    color: #bbb;
 }
 .experience-item ul {
     list-style: disc;
@@ -359,39 +426,39 @@ body {
 
 /* TESTIMONIALS */
 #testimonials {
-    background: rgba(16, 18, 23, 0.6);
+    background: rgba(24, 0, 38, 0.6);
     backdrop-filter: blur(4px);
+    color: #ddd;
 }
 .testimonial-list {
     margin-top: 2rem;
     text-align: left;
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr;
 }
 .testimonial-item {
     padding: 1.5rem;
+    background: #1a001f;
     border-radius: 6px;
-    background: #11161a;
-    box-shadow: 0 0 15px rgba(100,255,218,0.03);
+    box-shadow: 0 0 10px rgba(255, 0, 128, 0.1);
 }
 .testimonial-item h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 0.25rem;
-    color: #64ffda;
+    color: #ff0080;
+    font-family: 'Press Start 2P', sans-serif;
 }
 .testimonial-item p {
-    font-size: 0.95rem;
-    color: #aaa;
+    font-size: 0.85rem;
+    color: #bbb;
 }
 blockquote {
     margin-top: 1rem;
     padding-left: 1rem;
-    border-left: 3px solid #64ffda;
-    font-size: 0.95rem;
+    border-left: 3px solid #ff0080;
     line-height: 1.6;
-    color: #eee;
     quotes: "“" "”" "‘" "’";
+    color: #ddd;
 }
 blockquote:before {
     content: open-quote;
@@ -404,14 +471,14 @@ blockquote:after {
 
 /* CONTACT */
 .contact {
-    background: #0a0f12;
+    background: #0b0013;
 }
 .contact-intro {
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    color: #eee;
+    color: #ddd;
 }
 .contact-form {
     max-width: 600px;
@@ -428,31 +495,27 @@ blockquote:after {
 .contact-form textarea {
     width: 100%;
     padding: 1rem;
-    border: 1px solid #444;
+    border: 1px solid #330033;
     border-radius: 4px;
-    font-size: 1rem;
+    background-color: #200026;
+    color: #ddd;
     font-family: 'Poppins', sans-serif;
-    background-color: #11161a;
-    color: #eee;
 }
 .contact-form textarea {
     resize: vertical;
     min-height: 150px;
 }
-.contact-form button {
-    margin-top: 1rem;
-}
 
 /* FOOTER */
 .footer {
-    background-color: rgba(10,15,18,0.9);
+    background-color: rgba(11, 0, 19, 0.9);
     padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 -2px 8px rgba(255, 0, 128, 0.2);
 }
 .footer p {
     font-size: 0.9rem;
-    color: #aaa;
+    color: #ccc;
 }
 
 /* FADE-UP ANIMATION */
@@ -478,11 +541,11 @@ blockquote:after {
     }
     .nav-links {
         position: absolute;
-        top: 65px;
+        top: 60px;
         right: 0;
-        background-color: rgba(10,15,18,0.9);
+        background-color: rgba(11, 0, 19, 0.85);
         flex-direction: column;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        box-shadow: 0 2px 8px rgba(255, 0, 128, 0.3);
         padding: 1rem;
         transform: translateY(-200%);
         transition: transform 0.3s ease;
@@ -505,7 +568,10 @@ blockquote:after {
     }
 }
 @media screen and (max-width: 480px) {
-    .hero-text h1 {
-        font-size: 2rem;
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+    .glitch-title {
+        font-size: 1.8rem;
     }
 }

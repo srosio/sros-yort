@@ -4,10 +4,10 @@ layout: default
 
 <!-- Hero Section -->
 <section class="hero" id="home">
-  <div class="stars-bg"></div> <!-- Starfield background overlay -->
+  <div class="glitch-overlay"></div> <!-- Glitch overlay effect -->
   <div class="container hero-content fade-up">
     <div class="hero-text">
-      <h1>Hi, I'm <span>Yort Sros</span></h1>
+      <h1 class="glitch-title" data-text="YORT SROS">Hi, I'm <span>Yort Sros</span></h1>
       <p>
         Building Scalable Backend Solutions for Modern Digital Banking &amp; FinTech
       </p>
@@ -22,14 +22,13 @@ layout: default
       />
     </div>
   </div>
-  <!-- Wave SVG for futuristic flair -->
+  <!-- Cyber Wave SVG for background flair -->
   <div class="wave-container">
     <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-      <!-- Neon aqua wave -->
       <path
-        fill="#64ffda"
+        fill="#ff0080"
         fill-opacity="0.4"
-        d="M0,96L30,85.3C60,75,120,53,180,80C240,107,300,181,360,186.7C420,192,480,128,540,122.7C600,117,660,171,720,186.7C780,203,840,181,900,149.3C960,117,1020,75,1080,53.3C1140,32,1200,32,1260,53.3C1320,75,1380,117,1410,138.7L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        d="M0,96L30,112C60,128,120,160,180,186.7C240,213,300,235,360,213.3C420,192,480,128,540,133.3C600,139,660,213,720,229.3C780,245,840,203,900,170.7C960,139,1020,117,1080,128C1140,139,1200,181,1260,170.7C1320,160,1380,96,1410,64L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
       ></path>
     </svg>
   </div>
