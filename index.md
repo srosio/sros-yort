@@ -7,7 +7,7 @@ layout: default
   <div class="glitch-overlay"></div>
   <div class="container hero-content fade-up">
     <div class="hero-text">
-      <h1 class="glitch-title" data-text="Sros">Hi, I'm <span>Sros</span></h1>
+      <h1 class="glitch-title" data-text="Hi, I'm Sros">Hi, I'm <span>Sros</span></h1>
       <p>
         Building Scalable Backend Solutions for Modern Digital Banking &amp; FinTech
       </p>
