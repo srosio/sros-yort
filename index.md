@@ -7,7 +7,7 @@ layout: default
   <div class="glitch-overlay"></div> <!-- Glitch overlay effect -->
   <div class="container hero-content fade-up">
     <div class="hero-text">
-      <h1 class="glitch-title" data-text="YORT SROS">Hi, I'm <span>Yort Sros</span></h1>
+      <h1 class="glitch-title" data-text="SROS">Hi, I'm <span>Sros</span></h1>
       <p>
         Building Scalable Backend Solutions for Modern Digital Banking &amp; FinTech
       </p>
@@ -16,7 +16,7 @@ layout: default
     <div class="hero-img">
       <!-- Replace with your own image if desired -->
       <img
-        src="https://via.placeholder.com/400x400"
+        src="/assets/profile.jpg"
         alt="Profile"
         class="profile-pic"
       />
@@ -79,8 +79,8 @@ layout: default
       </div>
       <div class="about-img">
         <img
-          src="https://via.placeholder.com/500x400"
-          alt="About Yort Sros"
+          src="/assets/profile.jpg"
+          alt="About"
         />
       </div>
     </div>
@@ -118,7 +118,7 @@ layout: default
       <!-- Project 1 -->
       <div class="project-card neon-card">
         <img
-          src="https://via.placeholder.com/600x400"
+          src="/assets/digital_banking.png"
           alt="Digital Banking and FinTech"
           class="project-img"
         />
@@ -130,22 +130,6 @@ layout: default
             millions of users.
           </p>
           <p><strong>Technologies:</strong> Java, Spring Boot, Microservices, AWS</p>
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="project-card neon-card">
-        <img
-          src="https://via.placeholder.com/600x400"
-          alt="Payment Gateway Integration"
-          class="project-img"
-        />
-        <div class="project-info">
-          <h3>Payment Gateway Integration</h3>
-          <p>
-            Developed a secure payment gateway integration for seamless
-            transactions, ensuring reliability and optimal performance.
-          </p>
-          <p><strong>Technologies:</strong> Java, REST APIs, Docker</p>
         </div>
       </div>
     </div>
