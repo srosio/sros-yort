@@ -4,17 +4,19 @@ layout: default
 
 <!-- Hero Section -->
 <section class="hero" id="home">
-  <div class="glitch-overlay"></div> <!-- Glitch overlay effect -->
+  <!-- Glitch overlay remains -->
+  <div class="glitch-overlay"></div>
   <div class="container hero-content fade-up">
     <div class="hero-text">
+      <!-- Glitch title effect remains -->
       <h1 class="glitch-title" data-text="SROS">Hi, I'm <span>Sros</span></h1>
       <p>
         Building Scalable Backend Solutions for Modern Digital Banking &amp; FinTech
       </p>
       <a href="#projects" class="btn-primary neon-btn">View My Work</a>
     </div>
+    <!-- Hero image (the only one we keep) -->
     <div class="hero-img">
-      <!-- Replace with your own image if desired -->
       <img
         src="/assets/profile.jpg"
         alt="Profile"
@@ -22,7 +24,7 @@ layout: default
       />
     </div>
   </div>
-  <!-- Cyber Wave SVG for background flair -->
+  <!-- Cyber Wave SVG -->
   <div class="wave-container">
     <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
       <path
@@ -44,45 +46,13 @@ layout: default
     <div class="about-grid">
       <div class="about-text">
         <p>
-          As a Lead Java Backend Engineer at Mbanq, I specialize in crafting
-          scalable, secure, and innovative solutions for the digital banking
-          and FinTech industry. With extensive expertise in Java, Spring Boot,
-          and microservices, I lead a dynamic team that designs and implements
-          systems empowering financial institutions to thrive in a rapidly
-          evolving digital landscape.
-        </p>
-        <p>
-          <strong>💼 What I Bring to the Table</strong><br/>
-          • <strong>System Architecture:</strong> Designing robust, scalable, modular systems<br/>
-          • <strong>Performance Optimization:</strong> Ensuring high performance for millions of transactions<br/>
-          • <strong>Team Leadership:</strong> Mentoring teams, fostering technical excellence<br/>
-          • <strong>Collaboration:</strong> Working with cross-functional teams to align software with business goals
-        </p>
-        <p>
-          <strong>✨ Passion &amp; Vision</strong><br/>
-          I’m driven by a passion for transforming financial technology through
-          innovative solutions that prioritize customer experience,
-          scalability, and security. My focus lies in:
-        </p>
-        <ul>
-          <li>Innovation: Building next-generation digital banking platforms</li>
-          <li>Growth: Empowering my team to excel through mentorship</li>
-          <li>Excellence: Upholding high standards of code quality</li>
-        </ul>
-        <p>
-          <strong>🏆 Highlights &amp; Achievements</strong><br/>
-          • Led development of digital banking systems serving millions worldwide<br/>
-          • Reduced system latency by 40% through performance tuning<br/>
-          • Built a high-performing team, fostering a culture of excellence<br/>
-          • Delivered features ahead of schedule via cross-department collaboration
+          I’m a Lead Java Backend Engineer with a passion for crafting
+          scalable, secure, and innovative FinTech solutions. With expertise in
+          microservices, team leadership, and system optimization, I help
+          financial institutions evolve in a fast-paced digital landscape.
         </p>
       </div>
-      <div class="about-img">
-        <img
-          src="/assets/profile.jpg"
-          alt="About"
-        />
-      </div>
+      <!-- Removed the about image entirely -->
     </div>
   </div>
 </section>
@@ -95,7 +65,7 @@ layout: default
       <div class="underline"></div>
     </div>
     <p class="contact-intro">
-      Here are some of the core technologies and areas I specialize in:
+      Here are some core technologies and areas I specialize in:
     </p>
     <ul class="skills-list">
       <li>Java</li>
@@ -103,6 +73,11 @@ layout: default
       <li>Microservices</li>
       <li>Performance Tuning</li>
       <li>System Architecture</li>
+      <li>AWS</li>
+      <li>Docker</li>
+      <li>CI/CD Pipelines</li>
+      <li>Git &amp; GitHub</li>
+      <li>TDD &amp; Unit Testing</li>
     </ul>
   </div>
 </section>
@@ -115,28 +90,33 @@ layout: default
       <div class="underline"></div>
     </div>
     <div class="projects-grid">
-      <!-- Project 1 -->
+      <!-- Removed project images; keep only text/descriptions. -->
       <div class="project-card neon-card">
-        <img
-          src="/assets/digital_banking.png"
-          alt="Digital Banking and FinTech"
-          class="project-img"
-        />
         <div class="project-info">
           <h3>Digital Banking &amp; FinTech</h3>
           <p>
             Designed and implemented a scalable digital banking platform using
-            Java and Spring Boot, enabling seamless financial transactions for
-            millions of users.
+            Java and Spring Boot, enabling seamless transactions for millions
+            of users.
           </p>
           <p><strong>Technologies:</strong> Java, Spring Boot, Microservices, AWS</p>
+        </div>
+      </div>
+      <div class="project-card neon-card">
+        <div class="project-info">
+          <h3>Payment Gateway Integration</h3>
+          <p>
+            Developed a secure payment gateway integration for frictionless
+            and reliable transactions.
+          </p>
+          <p><strong>Technologies:</strong> Java, REST APIs, Docker</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Experience Section -->
+<!-- Experience Section (Progress Bars) -->
 <section class="section fade-up" id="experience">
   <div class="container section-content">
     <div class="section-title">
@@ -144,51 +124,53 @@ layout: default
       <div class="underline"></div>
     </div>
     <div class="experience-list">
-      <!-- Lead Java Backend Engineer - Mbanq -->
-      <div class="experience-item">
-        <h3>Lead Java Backend Engineer - Mbanq</h3>
-        <p><strong>Sep 2023 - Present · Phnom Penh, Cambodia · On-site</strong></p>
-        <ul>
-          <li>Architect and develop robust, scalable, secure Core Banking systems</li>
-          <li>Lead and mentor a team of engineers, fostering a culture of excellence</li>
-          <li>Collaborate with cross-functional teams (Product, UI, DevOps) to translate requirements into solutions</li>
-          <li>Implement best practices for code quality, testing, and CI/CD</li>
-          <li>Optimize system performance through profiling and analysis</li>
-          <li>Stay current with the latest Java technologies and trends</li>
-        </ul>
+      <!-- Each experience item is now a progress bar with a label. -->
+      <div class="experience-progress">
+        <div class="exp-title">
+          <strong>Lead Java Backend Engineer - Mbanq</strong>
+          <span>Sep 2023 - Present · Phnom Penh, Cambodia</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:80%;">
+            <span>Core Banking / Team Leadership (80%)</span>
+          </div>
+        </div>
       </div>
-      <!-- Senior Java Backend Engineer - Mbanq -->
-      <div class="experience-item">
-        <h3>Senior Java Backend Engineer - Mbanq</h3>
-        <p><strong>Apr 2021 - Sep 2023 · Remote</strong></p>
-        <ul>
-          <li>Built and maintained CORE API, focusing on performance and scalability</li>
-          <li>Developed high-quality code using best practices and design patterns</li>
-          <li>Contributed to CI/CD pipelines for efficient deployments</li>
-          <li>Leveraged AWS services for infrastructure needs</li>
-          <li>Collaborated with developers to share knowledge and improve performance</li>
-        </ul>
+
+      <div class="experience-progress">
+        <div class="exp-title">
+          <strong>Senior Java Backend Engineer - Mbanq</strong>
+          <span>Apr 2021 - Sep 2023 · Remote</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:70%;">
+            <span>Performance &amp; Scalability (70%)</span>
+          </div>
+        </div>
       </div>
-      <!-- Software Engineer - Kim & Lim Soft Co., Ltd. -->
-      <div class="experience-item">
-        <h3>Software Engineer - Kim &amp; Lim Soft Co., Ltd.</h3>
-        <p><strong>Sep 2019 - Apr 2021 · Phnom Penh, Cambodia · On-site</strong></p>
-        <ul>
-          <li>Analyzed, designed, implemented, tested, and maintained high-quality software</li>
-          <li>Developed security-related application software</li>
-          <li>Adapted to new technologies swiftly for diverse projects</li>
-          <li>Led and guided junior programmers in R&D projects</li>
-        </ul>
+
+      <div class="experience-progress">
+        <div class="exp-title">
+          <strong>Software Engineer - Kim &amp; Lim Soft Co., Ltd.</strong>
+          <span>Sep 2019 - Apr 2021 · Phnom Penh, Cambodia</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:60%;">
+            <span>Security / R&amp;D Projects (60%)</span>
+          </div>
+        </div>
       </div>
-      <!-- Core Developer - TrueMoney Cambodia -->
-      <div class="experience-item">
-        <h3>Core Developer - TrueMoney Cambodia</h3>
-        <p><strong>Sep 2018 - Sep 2019 · Phnom Penh, Cambodia · On-site</strong></p>
-        <ul>
-          <li>Built and maintained CORE APIs</li>
-          <li>Collaborated with cross-functional teams to define and deploy new product features</li>
-          <li>Integrated multiple data sources and APIs for broad business requirements</li>
-        </ul>
+
+      <div class="experience-progress">
+        <div class="exp-title">
+          <strong>Core Developer - TrueMoney Cambodia</strong>
+          <span>Sep 2018 - Sep 2019 · Phnom Penh, Cambodia</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:50%;">
+            <span>CORE APIs / Collaboration (50%)</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -202,40 +184,24 @@ layout: default
       <div class="underline"></div>
     </div>
     <div class="testimonial-list">
-      <!-- Testimonial 1 -->
       <div class="testimonial-item neon-card">
         <h3>Sean Mengkong</h3>
         <p><em>Deputy Head of Digital Banking</em></p>
         <blockquote>
-          "Sros is an outstanding backend Java developer with a deep understanding 
-          of frameworks such as Spring, Hibernate, and microservices architecture. 
-          His expertise in designing scalable systems and optimizing performance 
-          has significantly contributed to the success of our projects. Sros is a 
-          reliable problem-solver, consistently delivering high-quality, efficient code. 
-          Additionally, he excels at leading and mentoring team members, fostering 
-          collaboration, and driving the team toward achieving its goals."
+          "Sros is an outstanding backend Java developer with a deep
+          understanding of frameworks like Spring, Hibernate, and microservices.
+          His expertise in designing scalable systems and optimizing performance
+          significantly contributed to our project's success."
         </blockquote>
       </div>
-      <!-- Testimonial 2 -->
       <div class="testimonial-item neon-card">
         <h3>Chanheng SEANG</h3>
         <p><em>Lead Architect</em></p>
         <blockquote>
-          "I had the pleasure of working with Sros Yort, who served as the Backend 
-          Team Lead (Java) at Mbanq. Sros is an exceptionally talented leader with 
-          deep expertise in Java development and backend systems architecture. His 
-          technical knowledge, coupled with his hands-on approach, has been instrumental 
-          in driving the success of multiple projects at Mbanq. Sros is not only a 
-          skilled coder but also an effective team leader. He fosters a collaborative 
-          environment where team members can grow and learn while consistently delivering 
-          high-quality, scalable solutions. His ability to solve complex technical 
-          challenges, combined with his understanding of system performance and 
-          scalability, makes him an invaluable asset to any team. Under his leadership, 
-          the backend team has built and optimized systems that are crucial to the 
-          business's growth and performance. His commitment to excellence, attention 
-          to detail, and dedication to continuous improvement have set a high standard 
-          for the entire team. I highly recommend Sros for any leadership role in 
-          backend development or software engineering."
+          "I had the pleasure of working with Yort Sros at Mbanq. He fosters a
+          collaborative environment where team members can grow and learn, all
+          while delivering high-quality, scalable solutions. His hands-on
+          approach and leadership style drive outstanding technical results."
         </blockquote>
       </div>
     </div>
