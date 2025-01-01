@@ -382,7 +382,7 @@ body {
 /* EXPERIENCE (centered with background image) */
 .experience-bg {
     /* Replace URL with a real cyberpunk-styled background image */
-    background: url('https://via.placeholder.com/1600x900/FF0080/000000?text=Cyberpunk+BG')
+    background: url('/assets/profile.jpg')
     center/cover no-repeat;
     position: relative;
     color: #ddd;
