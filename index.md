@@ -16,7 +16,7 @@ layout: default
     <!-- Hero image remains (the only place we keep an image) -->
     <div class="hero-img">
       <img
-        src="/assets/profile.jpg"
+        src="/assets/sros.jpg"
         alt="Profile"
         class="profile-pic"
       />
@@ -68,16 +68,7 @@ layout: default
     <ul class="skills-list">
       <li>Java</li>
       <li>Spring Boot</li>
-      <li>Microservices</li>
-      <li>Performance Tuning</li>
       <li>System Architecture</li>
-      <li>Banking Integrations (Payment Gateways, Card Services)</li>
-      <li>RegTech &amp; Compliance</li>
-      <li>Transaction Processing</li>
-      <li>CI/CD Pipelines (Jenkins, GitHub Actions)</li>
-      <li>AWS &amp; Cloud Deployments</li>
-      <li>Docker &amp; Kubernetes</li>
-      <li>Database Optimization (SQL &amp; NoSQL)</li>
     </ul>
   </div>
 </section>
@@ -99,17 +90,7 @@ layout: default
             and Spring Boot, empowering millions of users with seamless account
             management and payments.
           </p>
-          <p><strong>Technologies:</strong> Java, Spring Boot, Microservices, AWS</p>
-        </div>
-      </div>
-      <div class="project-card neon-card">
-        <div class="project-info">
-          <h3>Payment Gateway Integration</h3>
-          <p>
-            Built a secure payment gateway integration for high-volume
-            transaction processing in compliance with modern banking standards.
-          </p>
-          <p><strong>Technologies:</strong> Java, REST APIs, Docker</p>
+          <p><strong>Technologies:</strong> Java, Spring Boot, AWS</p>
         </div>
       </div>
     </div>
