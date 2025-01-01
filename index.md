@@ -160,21 +160,17 @@ layout: default
       <div class="testimonial-item neon-card">
         <h3>Sean Mengkong</h3>
         <p><em>Deputy Head of Digital Banking</em></p>
-        <blockquote>
-          Sros is an outstanding backend Java developer with a deep understanding
+        <blockquote>Sros is an outstanding backend Java developer with a deep understanding
           of frameworks such as Spring, Hibernate, and microservices architecture.
           His expertise in designing scalable systems and optimizing performance
-          has significantly contributed to the success of our projects.
-        </blockquote>
+          has significantly contributed to the success of our projects.</blockquote>
       </div>
       <div class="testimonial-item neon-card">
         <h3>Chanheng SEANG</h3>
         <p><em>Lead Architect</em></p>
-        <blockquote>
-          Under Sros's leadership, the backend team built and optimized crucial
+        <blockquote>Under Sros's leadership, the backend team built and optimized crucial
           FinTech systems that significantly improved our performance metrics.
-          His commitment to excellence and attention to detail is unparalleled.
-        </blockquote>
+          His commitment to excellence and attention to detail is unparalleled.</blockquote>
       </div>
     </div>
   </div>

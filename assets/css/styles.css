@@ -380,15 +380,15 @@ body {
 }
 
 /* EXPERIENCE (centered with background image, neon corners, subtle glitch) */
-.experience-bg {
-    /* Replace URL with a real cyberpunk-styled background image */
-    background: url('https://via.placeholder.com/1600x900/FF0080/000000?text=Cyberpunk+BG')
-    center/cover no-repeat;
-    position: relative;
-    color: #ddd;
-    backdrop-filter: blur(4px);
-    padding: 4rem 0;
-}
+/*.experience-bg {*/
+/*    !* Replace URL with a real cyberpunk-styled background image *!*/
+/*    background: url('https://via.placeholder.com/1600x900/FF0080/000000?text=Cyberpunk+BG')*/
+/*    center/cover no-repeat;*/
+/*    position: relative;*/
+/*    color: #ddd;*/
+/*    backdrop-filter: blur(4px);*/
+/*    padding: 4rem 0;*/
+/*}*/
 .experience-content {
     text-align: center;
 }
