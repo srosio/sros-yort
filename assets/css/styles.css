@@ -127,7 +127,7 @@ body {
     box-shadow: 0 0 15px rgba(255, 0, 128, 0.3);
 }
 
-/* GLITCH TITLE EFFECT */
+/* GLITCH TITLE EFFECT (Hero) */
 .glitch-title {
     font-family: 'Press Start 2P', sans-serif;
     position: relative;
@@ -154,7 +154,7 @@ body {
     animation: glitch-anim2 2.5s infinite linear alternate-reverse;
 }
 
-/* Glitch Animations */
+/* Glitch Animations (Hero) */
 @keyframes glitch-anim {
     0% {
         clip: rect(72px, 9999px, 74px, 0);
@@ -379,10 +379,10 @@ body {
     box-shadow: 0 0 15px rgba(255, 0, 128, 0.4);
 }
 
-/* EXPERIENCE (centered with background image) */
+/* EXPERIENCE (centered with background image, neon corners, subtle glitch) */
 .experience-bg {
     /* Replace URL with a real cyberpunk-styled background image */
-    background: url('/assets/profile.jpg')
+    background: url('https://via.placeholder.com/1600x900/FF0080/000000?text=Cyberpunk+BG')
     center/cover no-repeat;
     position: relative;
     color: #ddd;
@@ -397,7 +397,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    align-items: center; /* Center the experience items */
+    align-items: center; /* Center the experience items horizontally */
 }
 .experience-item {
     max-width: 700px;
@@ -406,13 +406,112 @@ body {
     padding: 1.5rem;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(255, 0, 128, 0.2);
+    position: relative; /* For neon corners */
+    overflow: hidden;   /* Hide corner lines if they exceed the box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+/* Neon corners on hover */
+.experience-item::before,
+.experience-item::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border: 2px solid #ff0080;
+    box-shadow: 0 0 8px #ff0080;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+/* Top-left corner */
+.experience-item::before {
+    top: 0;
+    left: 0;
+    border-bottom: none;
+    border-right: none;
+    border-top-left-radius: 6px;
+}
+/* Bottom-right corner */
+.experience-item::after {
+    bottom: 0;
+    right: 0;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 6px;
+}
+/* Reveal corners on hover */
+.experience-item:hover::before,
+.experience-item:hover::after {
+    opacity: 1;
+}
+/* Subtle hover lift */
+.experience-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(255, 0, 128, 0.4);
+}
+
+/* Glitch effect for experience titles (smaller version) */
 .experience-item h3 {
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     color: #ff0080;
     font-family: 'Press Start 2P', sans-serif;
-    text-align: center; /* Title centered */
+    text-align: center;
+    position: relative;
+}
+.experience-item h3::before,
+.experience-item h3::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    color: #ff00bf;
+}
+.experience-item h3::before {
+    animation: glitch-subtle-1 2.5s infinite linear alternate-reverse;
+}
+.experience-item h3::after {
+    animation: glitch-subtle-2 2.5s infinite linear alternate-reverse;
+    text-shadow: -1px 0 pink;
+}
+
+/* Smaller glitch animations for sub-headers */
+@keyframes glitch-subtle-1 {
+    0% {
+        clip: rect(30px, 9999px, 44px, 0);
+        transform: skew(0.43deg);
+    }
+    10% {
+        clip: rect(10px, 9999px, 25px, 0);
+        transform: skew(0.61deg);
+    }
+    20% {
+        clip: rect(25px, 9999px, 60px, 0);
+        transform: skew(0.32deg);
+    }
+    100% {
+        clip: rect(14px, 9999px, 36px, 0);
+        transform: skew(0.56deg);
+    }
+}
+@keyframes glitch-subtle-2 {
+    0% {
+        clip: rect(5px, 9999px, 18px, 0);
+        transform: skew(0.43deg);
+    }
+    10% {
+        clip: rect(40px, 9999px, 50px, 0);
+        transform: skew(0.61deg);
+    }
+    20% {
+        clip: rect(28px, 9999px, 64px, 0);
+        transform: skew(0.32deg);
+    }
+    100% {
+        clip: rect(10px, 9999px, 24px, 0);
+        transform: skew(0.56deg);
+    }
 }
 .experience-item p {
     margin-bottom: 1rem;
